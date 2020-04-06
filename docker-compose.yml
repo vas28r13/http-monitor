@@ -1,0 +1,7 @@
+version: '3'
+services:
+  http-monitor:
+    build: .
+    command: python3.7 run_http_monitor.py
+    volumes:
+      - ./:/opt/scripts
